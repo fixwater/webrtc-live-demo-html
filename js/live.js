@@ -20,7 +20,12 @@ var selectedStream = 1;
 $(document).ready(function() {
 	// 初始化库
 	Janus.init({debug: "all", callback: function() {
-		// 启动连接服务器
+		
+		//Demo打开网页开始就连接
+		$('#start').click();
+		
+		// 启动连接函数
+		$('#start').one('click', function() {
 			$(this).attr('disabled', true).unbind('click');
 			// Make sure the browser supports WebRTC
 			if(!Janus.isWebrtcSupported()) {
@@ -234,7 +239,7 @@ $(document).ready(function() {
 						window.location.reload();
 					}
 				});
-		
+		});
 	}});
 });
 
