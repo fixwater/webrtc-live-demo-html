@@ -1,9 +1,9 @@
 //服务器地址
 var server = null;
 if(window.location.protocol === 'http:')
-	server = "http://langchao.yanxishe.cc:8088/janus";
+	server = "http://192.168.199.202:8088/janus";
 else
-	server = "http://langchao.yanxishe.cc:8088/janus";
+	server = "http://192.168.199.202:8088/janus";
 
 var janus = null;
 var streaming = null;
