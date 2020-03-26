@@ -1,9 +1,9 @@
 //服务器地址
 var server = null;
 if(window.location.protocol === 'http:')
-	server = "http://192.168.199.202:8088/janus";
+	server = "https://janus.conf.meetecho.com/janus";
 else
-	server = "http://192.168.199.202:8088/janus";
+	server = "https://janus.conf.meetecho.com/janus";
 
 var janus = null;
 var streaming = null;
